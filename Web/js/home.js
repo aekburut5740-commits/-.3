@@ -1,13 +1,25 @@
+import {students} from './student.js'
+
 const graph1 = document.getElementById('graph1');
 const graph2 = document.getElementById('graph2');
 
-/*เปลี่ยนสถานะนักเรียนตรงนี้*/
+/*เปลี่ยนสถานะนักเรียนเป็นจำนวน*/
 
-let stu_all = 20
-let stu_miss = 1
-let stu_leave = 2
-let stu_late = 5
-let stu_come = 12
+let stu_all = students.length
+
+let stu_miss = students.filter(function (student) {
+    return student.status === 'miss'
+}).length
+let stu_leave = students.filter(function (student) {
+    return student.status === 'leave'
+}).length
+let stu_late = students.filter(function (student) {
+    return student.status === 'late'
+}).length
+let stu_come = students.filter(function (student) {
+    return student.status === 'come'
+}).length
+
 let stu_stay = stu_come + stu_late
 let stu_away = stu_miss + stu_leave
 
@@ -53,4 +65,35 @@ new Chart(graph2, {
             ]
         }]
     }
+});
+
+const statusMap = {
+  "1": "come",
+  "2": "late",
+  "3": "leave",
+  "4": "miss"
+};
+
+const status_option = document.getElementById("status-option");
+const stu_status_list = document.getElementById("stu-status-list");
+
+function renderByStatus(selectedValue) {
+  const targetStatus = statusMap[selectedValue];
+  if (!targetStatus) return;
+
+  const matched = students.filter((student) => student.status === targetStatus);
+
+  stu_status_list.innerHTML = "";
+
+  matched.forEach((student) => {
+    const li = document.createElement("li");
+    li.textContent = student.name;
+    stu_status_list.appendChild(li);
+  });
+}
+
+renderByStatus(status_option.value);
+
+status_option.addEventListener("change", () => {
+  renderByStatus(status_option.value);
 });

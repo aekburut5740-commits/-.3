@@ -2,87 +2,132 @@
     display: flex;
 }
 .sidebar{
-    position: relative;
-    z-index: 2  ;
-    background-color: rgb(37, 58, 128);
-    display: grid;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(37, 59, 133);
+    display: inline-block;
     width: 100%;
     max-width: 20vh;
     height: 100%;
-    max-height: 100vh;
     color: white;
+    box-shadow: 0vh 0vh 2vh black;
 }
-.sidebar i{
+.cap{
+    position: relative;
+    font-size: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10vh;
-    margin: 10%;
-}
-.hr1{
-    margin: 0vh 0vh 50% 0vh;
+    margin: 15% 0 0 0;
 }
 .menu{
-    position: relative;
+    position: absolute;
     display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
     width: 80%;
-    margin: 0;
+    margin: 1% 0vh;
 }
 .menu i{
     font-size: 2.5vh;
-    margin: 8%;
+    margin: 1.8vh;
 }
 .menu span{
     font-size: 1.8vh;
 }
 .menu-label-now{
+    position: absolute;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 50% 0 0 0;
     background-color: rgb(21, 36, 73);
     width: 125%;
     text-decoration: none;
     color: white;
 }
-.menu-label{
+.menu-label-1{
+    position: absolute;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 100% 0 0 0;
     width: 125%;
     text-decoration: none;
     color: white;
 }
-.menu-label:hover,.menu-label-now:hover{
+.menu-label-2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 150% 0 0 0;
+    width: 125%;
+    text-decoration: none;
+    color: white;
+}
+.menu-label-3{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 200% 0 0 0;
+    width: 125%;
+    text-decoration: none;
+    color: white;
+}
+.menu-label-4{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 250% 0 0 0;
+    width: 125%;
+    text-decoration: none;
+    color: white;
+}
+.menu-label-5{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 300% 0 0 0;
+    width: 125%;
+    text-decoration: none;
+    color: white;
+}
+.menu-label-1:hover,.menu-label-2:hover,.menu-label-3:hover,.menu-label-4:hover,.menu-label-5:hover,.menu-label-now:hover{
     background-color: rgb(9, 17, 46);
     width: 130%;
     border-radius: 0vh 1vh 1vh 0vh;
     transition: 0.2s;
+    box-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 0.726);
 }
 .setting{
+    position: absolute;
     text-decoration: none;
-    color: rgb(216, 239, 255);
+    background-color: rgb(184, 184, 184);
+    padding: 4% 6% 4% 30%;
+    border-radius: 0 5vh 5vh 0;
+    color: rgb(29, 29, 29);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50% 0vh 10% 0vh;
-    font-size: 1.8vh;
+    margin: 365% 0 0 -20%;
+    font-size: 1.5vh;
 }
 .setting:hover{
+    background-color: rgb(14, 14, 14);
     color: white;
+    margin: 365% 0 0 -10%;
     transition: 0.2s;
-}
-.hr{
-    margin: 0vh 10%;
+    box-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 0.726);
 }
 .logout{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3vh 3vh 3vh 3vh;
+    margin: 395% 0 0 -20%;
     font-size: 1.6vh;
     background-color: rgb(37, 37, 37);
-    padding: 0vh;
-    border-radius: 10vh;
+    padding: 0% 8% 0% 30%;
+    border-radius: 0 5vh 5vh 0;
 }
 .logout a{
     text-decoration: none;
@@ -90,16 +135,16 @@
 }
 .logout:hover{
     background-color: rgb(155, 41, 41);
-    font-size: 1.7vh;
-    padding: 0vh;
-    margin: 3vh 3vh;
-    transition: 0.1s;
+    margin: 395% 0 0 -10%;
+    transition: 0.2s;
+    box-shadow: 0vh 0vh 1vh rgba(155, 41, 41, 0.726);
 }
 .logout-box{
-    position: fixed;
+    position: relative;
     z-index: 10000;
-    inset: 35vh 65vh;
+    inset: 0% 0%;
     display: none;
+    padding: 3%;
     justify-content: center;
     align-items: center;
     background-color: rgb(27, 27, 27);
@@ -116,7 +161,7 @@
 .logout-box h1{
     color: rgb(255, 255, 255);
     position: relative;
-    margin: 0vh 0vh 14vh 0vh;
+    margin: 0% 0% 25% 0%;
     font-size: 4vh;
 }
 .logout-option{
