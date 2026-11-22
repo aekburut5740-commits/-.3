@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+        <img src="pic/Back1.jpg" class="bg">
+    <div class="login-box">
+        <i class="fa-solid fa-graduation-cap i-cap"></i>
+        <h1>เช็คสิถิติการมาเรียน</h1>
+        <p>เข้าสู่ระบบ</p>
+        <div class="field">
+            <label class="field-label" for="username">
+                <i class="fa-solid fa-user i-in"></i>
+                <span>| เลขประจำตัวผู้ใช้</span>
+            </label>
+            <input id="id" type="text" placeholder="รหัสประจำตัว">
+        </div>
+
+        <div class="field">
+            <label class="field-label" for="password">
+                <i class="fa-solid fa-lock i-in"></i>
+                <span>| รหัสผ่าน</span>
+            </label>
+            <div class="password-input">
+                <input id="password" type="password" placeholder="รหัสผ่าน">
+            </div>
+        </div>
+        <div class="warning">
+            <p id="warning"></p>
+        </div>
+        <button id="login" class="button-login">เข้าสู่ระบบ</button>
+
+        <script src="js/login.js"></script>
+</body>
+
+</html>

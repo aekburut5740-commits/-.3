@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(194, 232, 255);
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+}
+.main-box{
+    margin: 4vh 0vh 0vh 4vh;
+    position: relative;
+    z-index: 1;
+}
+.head{
+    background-color: rgb(34, 34, 34);
+    color: #ffffff;
+    width: 60vh;
+    height: 10vh;
+    border-radius: 5vh 5vh 0vh 0vh;
+}
+.head h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2vh;
+    font-size: 4.5vh;
+}
+.content{
+    background-color: white;
+    width: 165vh;
+    height: 80vh;
+    border-radius: 0vh 5vh 5vh 5vh;
+}
+.graph{
+    position: absolute;
+    width: 70vh;
+    height: 40vh;
+    margin: 10vh 0vh 0vh 5vh;
+}
+.graph h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+}
+.graph hr{
+    margin: 2vh 10vh;
+    border: black solid 2px;
+}
+.chart{
+    display: flex;
+    width: 80vh;
+    height: 40vh;
+}
+.status{
+    position: absolute;
+    width: 77vh;
+    height: 30vh;
+    margin: 0vh 0vh 0vh 88vh;
+}
+.status h1{
+    font-size: 5vh;
+    margin: 2vh 0vh;
+}
+.status p{
+    font-size: 3vh;
+    margin: 1vh 0vh;
+}
+.status-miss,.status-leave,.status-late,.status-come,.status-all{
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 13vh;
+    height: 25vh;
+    border-radius: 5vh;
+}
+.status-all{
+    background-color: rgb(2, 2, 2);
+    color: white;
+    margin: 2.2vh 0vh 0vh 62vh;
+    border: rgb(124, 124, 124) solid 3px;
+}
+.status-miss{
+    background-color: #ff1100c2;
+    margin: 2.5vh 0vh 0vh 47vh;
+}
+.status-leave{
+    background-color: #f36e21bd;
+    margin: 2.5vh 0vh 0vh 32vh;
+}
+.status-late{
+    background-color: #dacf35be;
+    margin: 2.5vh 0vh 0vh 17vh;
+}
+.status-come{
+    background-color: #40cf45b6;
+    margin: 2.5vh 0vh 0vh 1vh;
+}
+.stu-status{
+    background-color: black;
+    width: 48vh;
+    height: 50vh;
+    margin: 30vh 0vh 0vh 29vh;
+}
