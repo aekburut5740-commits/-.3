@@ -7,17 +7,17 @@ const graph2 = document.getElementById('graph2');
 
 let stu_all = students.length
 
-let stu_miss = students.filter(function (student) {
-    return student.status === 'miss'
+let stu_miss = students.filter(function (students) {
+    return students.status === 'miss'
 }).length
-let stu_leave = students.filter(function (student) {
-    return student.status === 'leave'
+let stu_leave = students.filter(function (students) {
+    return students.status === 'leave'
 }).length
-let stu_late = students.filter(function (student) {
-    return student.status === 'late'
+let stu_late = students.filter(function (students) {
+    return students.status === 'late'
 }).length
-let stu_come = students.filter(function (student) {
-    return student.status === 'come'
+let stu_come = students.filter(function (students) {
+    return students.status === 'come'
 }).length
 
 let stu_stay = stu_come + stu_late
