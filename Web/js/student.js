@@ -1,6 +1,6 @@
 /*เก็บเลขที่และชื่อนักเรียน*/
 
-export const students = [
+window.students = [
     { number: 1,id: 27903, name: 'นางสาว ชุติกาญจน์ สุวรรณมณี', status: 'come'},
     { number: 2,id: 27904, name: 'นางสาว ชลธิชา อนุสาร', status: 'leave'},
     { number: 3,id: 27905, name: 'นางสาว ณัฐณิชา คงบุญ', status: 'leave'},
@@ -21,4 +21,4 @@ export const students = [
     { number: 18,id: 27948, name: 'นางสาว ปราถนา ศรรักษ์', status: 'come'},
     { number: 19,id: 27951, name: 'นาย ฮาบิ๊บ สาโรวาท', status: 'late'},
     { number: 20,id: 27954, name: 'นางสาว นภาเพชร นวลจันทร์', status: 'come'}
-]
+];

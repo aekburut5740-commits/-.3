@@ -1,4 +1,4 @@
-import {students} from './student.js'
+const students = window.students;
 
 const graph1 = document.getElementById('graph1');
 const graph2 = document.getElementById('graph2');
