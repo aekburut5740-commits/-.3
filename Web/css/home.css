@@ -138,14 +138,6 @@ body{
     height: 40vh;
     margin: 36vh 0vh 0vh 93vh;
 }
-.check-box-box{
-    background-color: rgb(172, 172, 172);
-    width: 23vh;
-    height: 25vh;
-    margin: 9vh 0vh 0vh 0vh;
-    border-radius: 5vh;
-    border: rgb(124, 124, 124) solid 2px;
-}
 .check-box-link{
     display: flex;
     justify-content: center;
@@ -160,24 +152,58 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.check-box-box i{
+/* โครงสร้างหลักและค่าเริ่มต้น (สีเทา) */
+.check-box-box {
+    background-color: rgb(172, 172, 172);
+    width: 23vh;
+    height: 25vh;
+    margin: 9vh 0vh 0vh 0vh;
+    border-radius: 5vh;
+    border: rgb(124, 124, 124) solid 2px;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.check-box-box i {
     font-size: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3vh 0vh 0vh 0vh;
 }
-.check-box-box h1{
+
+.check-box-box h1 {
     font-size: 2.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3vh 0vh 0vh 0vh;
 }
-.check-box-box p{
+
+.check-box-box p {
     font-size: 1.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1vh 0vh 0vh 0vh;
+}
+
+/* สถานะที่ 1: ค่าเริ่มต้น */
+.check-box-box.status-default {
+    background-color: rgb(172, 172, 172);
+    border-color: rgb(124, 124, 124);
+    color: #111827;
+}
+
+/* สถานะที่ 2: เมื่อตัวแปร check มีค่า */
+.check-box-box.status-checked {
+    background-color: rgb(134, 219, 168);
+    border-color: rgb(46, 158, 91);
+    color: #064e3b;
+}
+
+/* สถานะที่ 3: ไม่มีค่า และเกินเวลา 08:30 */
+.check-box-box.status-overdue {
+    background-color: rgb(245, 147, 147);
+    border-color: rgb(201, 62, 62);
+    color: #7f1d1d;
 }
