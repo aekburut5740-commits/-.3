@@ -4,105 +4,106 @@ body{
     font-family: 'Prompt', sans-serif;
 }
 .main-box{
-    margin: 4vh 0vh 0vh 24vh;
+    margin: 40px 0px 0px 240px;
     position: relative;
     z-index: 1;
 }
 .head{
     background-color: rgb(34, 34, 34);
     color: #ffffff;
-    width: 60vh;
-    height: 10vh;
-    border-radius: 5vh 5vh 0vh 0vh;
-    box-shadow: 0vh 0vh 2vh black;
+    width: 600px;
+    height: 100px;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px 0px 20px black;
 }
 .head h1{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 2vh;
-    font-size: 4.5vh;
+    padding: 20px;
+    font-size: 45px;
 }
 .content{
+    position: relative;
     background-color: white;
-    width: 165vh;
-    height: 80vh;
-    border-radius: 0vh 5vh 5vh 5vh;
-    box-shadow: 0vh 0vh 2vh black;
+    width: 1650px;
+    height: 800px;
+    border-radius: 0px 50px 50px 50px;
+    box-shadow: 0px 0px 20px black;
 }
 .graph{
     position: absolute;
-    width: 70vh;
-    height: 40vh;
-    margin: 10vh 0vh 0vh 5vh;
+    width: 700px;
+    height: 400px;
+    margin: 100px 0px 0px 50px;
 }
 .graph h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4vh;
+    font-size: 40px;
 }
 .graph hr{
-    margin: 2vh 10vh;
+    margin: 30px 100px;
     border: black solid 2px;
 }
 .chart{
     display: flex;
-    width: 80vh;
-    height: 40vh;
+    width: 400px;
+    height: 100%;
 }
 .status{
     position: absolute;
-    width: 77vh;
-    height: 30vh;
-    margin: 0vh 0vh 0vh 88vh;
+    width: 770px;
+    height: 300px;
+    margin: 0px 0px 0px 880px;
 }
 .status h1{
-    font-size: 5vh;
-    margin: 2vh 0vh;
+    font-size: 50px;
+    margin: 20px 0px;
 }
 .status p{
-    font-size: 3vh;
-    margin: 1vh 0vh;
+    font-size: 30px;
+    margin: 10px 0px;
 }
 .status-miss,.status-leave,.status-late,.status-come,.status-all{
     text-align: center;
     display: inline-block;
     position: absolute;
-    width: 13vh;
-    height: 25vh;
-    border-radius: 5vh;
+    width: 130px;
+    height: 250px;
+    border-radius: 50px;
 }
 .status-all{
     background-color: rgb(2, 2, 2);
     color: white;
-    margin: 2.2vh 0vh 0vh 62vh;
+    margin: 22px 0px 0px 620px;
     border: rgb(124, 124, 124) solid 3px;
 }
 .status-miss{
     background-color: #ff1100c2;
-    margin: 2.5vh 0vh 0vh 47vh;
+    margin: 25px 0px 0px 470px;
 }
 .status-leave{
     background-color: #f36e21bd;
-    margin: 2.5vh 0vh 0vh 32vh;
+    margin: 25px 0px 0px 320px;
 }
 .status-late{
     background-color: #dacf35be;
-    margin: 2.5vh 0vh 0vh 17vh;
+    margin: 25px 0px 0px 170px;
 }
 .status-come{
     background-color: #40cf45b6;
-    margin: 2.5vh 0vh 0vh 1vh;
+    margin: 25px 0px 0px 10px;
 }
 .box-stu{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48vh;
-    height: 50vh;
-    margin: 30vh 0vh 0vh 29vh;
+    width: 480px;
+    height: 500px;
+    margin: 300px 0px 0px 290px;
 }
 .stu-status{
     display: block;
@@ -111,32 +112,32 @@ body{
     max-width: 90%;
     height: 100%;
     max-height: 88%;
-    margin-top: 2vh;
-    border-radius: 5vh;
+    margin-top: 20px;
+    border-radius: 50px;
     border: rgb(187, 233, 255) solid 3px;
     overflow-y: auto;
     overflow-x: hidden;
     box-sizing: border-box;
 }
 .stu-status select{
-    margin: 5% 0 0 82%;
-    font-size: 1.3vh;
+    margin: 5% 0 0 78%;
+    font-size: 18px;
 }
 .stu-status ul{
     margin: 0 0 0 3%;
-    font-size: 2vh;
+    font-size: 20px;
 }
 .option{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border-radius: 2vh;
-    padding: 5px;
+    border-radius: 20px;
+    padding: 10px;
 }
 .check-box{
     position: absolute;
-    width: 25vh;
-    height: 40vh;
-    margin: 36vh 0vh 0vh 93vh;
+    width: 250px;
+    height: 400px;
+    margin: 360px 0px 0px 930px;
 }
 .check-box-link{
     display: flex;
@@ -144,47 +145,47 @@ body{
     align-items: center;
     position: absolute;
     background-color: rgb(59, 59, 59);
-    width: 15vh;
-    height: 5vh;
-    margin: 1vh 0vh 0vh 4.5vh;
-    border-radius: 2vh;
-    font-size: 1.8vh;
+    width: 150px;
+    height: 50px;
+    margin: 10px 0px 0px 45px;
+    border-radius: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 /* โครงสร้างหลักและค่าเริ่มต้น (สีเทา) */
 .check-box-box {
     background-color: rgb(172, 172, 172);
-    width: 23vh;
-    height: 25vh;
-    margin: 9vh 0vh 0vh 0vh;
-    border-radius: 5vh;
+    width: 230px;
+    height: 250px;
+    margin: 90px 0px 0px 0px;
+    border-radius: 50px;
     border: rgb(124, 124, 124) solid 2px;
     transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
 
 .check-box-box i {
-    font-size: 10vh;
+    font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3vh 0vh 0vh 0vh;
+    margin: 30px 0px 0px 0px;
 }
 
 .check-box-box h1 {
-    font-size: 2.5vh;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3vh 0vh 0vh 0vh;
+    margin: 30px 0px 0px 0px;
 }
 
 .check-box-box p {
-    font-size: 1.5vh;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1vh 0vh 0vh 0vh;
+    margin: 10px 0px 0px 0px;
 }
 
 /* สถานะที่ 1: ค่าเริ่มต้น */

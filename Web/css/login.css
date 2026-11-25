@@ -24,10 +24,10 @@ body {
 .login-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: min(680px, calc(100vw - 32px));
-    min-height: min(720px, calc(100vh - 32px));
-    max-height: calc(100vh - 32px);
+    width: 40%;
+    height: 100%;
     overflow-y: auto;
     padding: 20px 40px 40px 40px;
     border: 1px solid black;
@@ -47,7 +47,7 @@ body {
     text-align: center;
 }
 
-.login-box > p {
+.login-box p {
     margin: 0 0 20px;
     font-size: 22px;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .warning {
-    min-height: 24px;
+    min-height: 20px;
     color: red;
 }
 
@@ -99,4 +99,223 @@ body {
 
 .button-login:hover {
     background: rgb(30, 105, 175);
+}
+
+@media screen and (max-height: 725px) {
+    
+    .login-box {
+        padding: 20px 30px 30px 30px;
+        height: 100%;
+    }
+    .i-cap {
+        font-size: 100px;
+    }
+    .login-box h1 {
+        margin: 8px 0;
+        font-size: 35px;
+    }
+    .login-box p {
+        margin: 0 0 20px;
+        font-size: 15px;
+    }
+    .field {
+        width: 85%;
+        margin: 5px 0;
+    }
+    .field-label-1,
+    .field-label-2 {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 10px;
+    }
+    .i-in {
+        font-size: 30px;
+    }
+    .field input {
+        width: 100%;
+        padding: 5px;
+        font: inherit;
+    }
+    .button-login {
+        width: 60%;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 565px) {
+    
+    .login-box {
+        padding: 20px 30px 30px 30px;
+        height: 100%;
+    }
+    .i-cap {
+        font-size: 90px;
+    }
+    .login-box h1 {
+        margin: 6px 0;
+        font-size: 30px;
+    }
+    .login-box p {
+        margin: 0 0 15px;
+        font-size: 12px;
+    }
+    .field {
+        width: 75%;
+        margin: 5px 0;
+    }
+    .field-label-1,
+    .field-label-2 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 8px;
+    }
+    .i-in {
+        font-size: 20px;
+    }
+    .field input {
+        width: 100%;
+        padding: 4px;
+        font: inherit;
+    }
+    .button-login {
+        width: 50%;
+        margin-top: 17px;
+        padding: 8px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1291px) {
+    .login-box {
+        padding: 20px 30px 30px 30px;
+        width: 50%;
+    }
+    .i-cap {
+        font-size: 100px;
+    }
+    .login-box h1 {
+        margin: 8px 0;
+        font-size: 35px;
+    }
+    .login-box p {
+        margin: 0 0 20px;
+        font-size: 15px;
+    }
+    .field {
+        width: 85%;
+        margin: 5px 0;
+    }
+    .field-label-1,
+    .field-label-2 {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 10px;
+    }
+    .i-in {
+        font-size: 30px;
+    }
+    .field input {
+        width: 100%;
+        padding: 5px;
+        font: inherit;
+    }
+    .button-login {
+        width: 60%;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    
+    .login-box {
+        padding: 20px 30px 30px 30px;
+        width: 70%;
+    }
+    .i-cap {
+        font-size: 90px;
+    }
+    .login-box h1 {
+        margin: 6px 0;
+        font-size: 30px;
+    }
+    .login-box p {
+        margin: 0 0 15px;
+        font-size: 12px;
+    }
+    .field {
+        width: 75%;
+        margin: 5px 0;
+    }
+    .field-label-1,
+    .field-label-2 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 8px;
+    }
+    .i-in {
+        font-size: 20px;
+    }
+    .field input {
+        width: 100%;
+        padding: 4px;
+        font: inherit;
+    }
+    .button-login {
+        width: 50%;
+        margin-top: 17px;
+        padding: 8px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 469px) {
+    
+    .login-box {
+        padding: 10px 20px 20px 20px;
+        width: 80%;
+    }
+    .i-cap {
+        font-size: 70px;
+    }
+    .login-box h1 {
+        margin: 6px 0;
+        font-size: 26px;
+    }
+    .login-box p {
+        margin: 0 0 15px;
+        font-size: 12px;
+    }
+    .field {
+        width: 75%;
+        margin: 5px 0;
+    }
+    .field-label-1,
+    .field-label-2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 6px;
+    }
+    .i-in {
+        font-size: 15px;
+    }
+    .field input {
+        width: 100%;
+        padding: 3px;
+        font: inherit;
+    }
+    .button-login {
+        width: 50%;
+        margin-top: 13px;
+        padding: 8px;
+        font-size: 15px;
+    }
 }
