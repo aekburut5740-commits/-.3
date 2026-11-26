@@ -4,15 +4,15 @@ body{
     font-family: 'Prompt', sans-serif;
 }
 .main-box{
-    margin: 40px 0px 0px 240px;
+    margin: 70px 0px 0px 155px;
     position: relative;
     z-index: 1;
 }
 .head{
     background-color: rgb(34, 34, 34);
     color: #ffffff;
-    width: 600px;
-    height: 100px;
+    width: 30%;
+    height: 9%;
     border-radius: 50px 50px 0px 0px;
     box-shadow: 0px 0px 20px black;
 }
@@ -21,20 +21,25 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 20px;
-    font-size: 45px;
+    padding: 18px;
+    font-size: 35px;
 }
 .content{
     position: relative;
+    display: grid;
+    grid-template-columns: 800px 770px;
+    grid-template-rows: 300px 500px;
     background-color: white;
-    width: 1650px;
-    height: 800px;
+    width: 100%;
+    width: 1375px;
+    height: 750px;
     border-radius: 0px 50px 50px 50px;
     box-shadow: 0px 0px 20px black;
 }
 .graph{
-    position: absolute;
-    width: 700px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 690px;
     height: 400px;
     margin: 100px 0px 0px 50px;
 }
@@ -42,7 +47,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 .graph hr{
     margin: 30px 100px;
@@ -50,60 +55,74 @@ body{
 }
 .chart{
     display: flex;
-    width: 400px;
+    width: 350px;
     height: 100%;
 }
 .status{
-    position: absolute;
+    display: grid;
+    grid-template-columns: 0px 130px 0px 130px 0px 130px 0px 130px 0px 130px 0px;
+    grid-template-rows: 300px 500px;
+    grid-column: 2;
+    grid-row: 1;
     width: 770px;
-    height: 300px;
-    margin: 0px 0px 0px 880px;
+    height: 800px;
 }
 .status h1{
-    font-size: 50px;
-    margin: 20px 0px;
+    font-size: 45px;
+    margin: 10px 0px;
 }
 .status p{
-    font-size: 30px;
-    margin: 10px 0px;
+    font-size: 25px;
+    margin: 5px 0px;
 }
 .status-miss,.status-leave,.status-late,.status-come,.status-all{
     text-align: center;
     display: inline-block;
-    position: absolute;
-    width: 130px;
-    height: 250px;
+    width: 110px;
+    height: 200px;
     border-radius: 50px;
 }
 .status-all{
+    grid-column: 10;
+    grid-row: 1;
     background-color: rgb(2, 2, 2);
     color: white;
-    margin: 22px 0px 0px 620px;
+    margin: 25px -90px 0px;
     border: rgb(124, 124, 124) solid 3px;
 }
 .status-miss{
+    grid-column: 8;
+    grid-row: 1;
     background-color: #ff1100c2;
-    margin: 25px 0px 0px 470px;
+    margin: 25px -90px 0px;
 }
 .status-leave{
+    grid-column: 6;
+    grid-row: 1;
     background-color: #f36e21bd;
-    margin: 25px 0px 0px 320px;
+    margin: 25px -90px 0px;
 }
 .status-late{
+    grid-column: 4;
+    grid-row: 1;
     background-color: #dacf35be;
-    margin: 25px 0px 0px 170px;
+    margin: 25px -90px 0px;
 }
 .status-come{
+    grid-column: 2;
+    grid-row: 1;
     background-color: #40cf45b6;
-    margin: 25px 0px 0px 10px;
+    margin: 25px -90px 0px;
 }
 .box-stu{
+    grid-column: 1 / -1;
+    grid-row: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 480px;
+    width: 400px;
     height: 500px;
-    margin: 300px 0px 0px 290px;
+    margin: -47px 0px 0px 180px;
 }
 .stu-status{
     display: block;
@@ -120,56 +139,66 @@ body{
     box-sizing: border-box;
 }
 .stu-status select{
-    margin: 5% 0 0 78%;
-    font-size: 18px;
+    margin: 5% 0 0 75%;
+    font-size: 15px;
 }
 .stu-status ul{
-    margin: 0 0 0 3%;
-    font-size: 20px;
+    margin: 5% 0 0 3%;
+    font-size: 18px;
 }
 .option{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 20px;
-    padding: 10px;
+    padding: 8px;
 }
 .check-box{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
     width: 250px;
     height: 400px;
-    margin: 360px 0px 0px 930px;
+    margin: -70px 0px 0px 0px;
 }
 .check-box-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     background-color: rgb(59, 59, 59);
-    width: 150px;
-    height: 50px;
-    margin: 10px 0px 0px 45px;
-    border-radius: 20px;
-    font-size: 18px;
+    width: 105px;
+    height: 37px;
+    margin: 130px 0px 20px 37px;
+    border-radius: 15px;
+    font-size: 16px;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    transition: 0.15s;
 }
-/* โครงสร้างหลักและค่าเริ่มต้น (สีเทา) */
+.check-box-link:hover{
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    width: 110px;
+    height: 42px;
+    margin: 127.5px 0px 17.5px 34.5px;
+}
 .check-box-box {
     background-color: rgb(172, 172, 172);
-    width: 230px;
-    height: 250px;
-    margin: 90px 0px 0px 0px;
-    border-radius: 50px;
+    width: 175px;
+    height: 210px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 30px;
     border: rgb(124, 124, 124) solid 2px;
     transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
 
 .check-box-box i {
-    font-size: 100px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
 }
 
 .check-box-box h1 {
@@ -186,25 +215,4 @@ body{
     justify-content: center;
     align-items: center;
     margin: 10px 0px 0px 0px;
-}
-
-/* สถานะที่ 1: ค่าเริ่มต้น */
-.check-box-box.status-default {
-    background-color: rgb(172, 172, 172);
-    border-color: rgb(124, 124, 124);
-    color: #111827;
-}
-
-/* สถานะที่ 2: เมื่อตัวแปร check มีค่า */
-.check-box-box.status-checked {
-    background-color: rgb(134, 219, 168);
-    border-color: rgb(46, 158, 91);
-    color: #064e3b;
-}
-
-/* สถานะที่ 3: ไม่มีค่า และเกินเวลา 08:30 */
-.check-box-box.status-overdue {
-    background-color: rgb(245, 147, 147);
-    border-color: rgb(201, 62, 62);
-    color: #7f1d1d;
 }
