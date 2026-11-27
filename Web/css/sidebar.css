@@ -130,16 +130,17 @@
     box-shadow: 0px 0px 10px rgba(155, 41, 41, 0.726);
 }
 .logout-box{
-    position: relative;
+    width: 100%;
+    max-width: 20%;
+    position: fixed;
     z-index: 10000;
-    inset: 0% 0%;
+    inset: 37% 37%;
     display: none;
-    padding: 3%;
     justify-content: center;
     align-items: center;
     background-color: rgb(27, 27, 27);
     border-radius: 5vh;
-    border: rgb(255, 255, 255) solid 5px;
+    border: rgb(255, 255, 255) solid 2px;
     box-shadow: 0px 0px 30px black;
     animation: logout-box 5s ease-in-out infinite;
 }
@@ -149,24 +150,23 @@
     100% {transform: translateY(-0.30px);}
 }
 .logout-box h1{
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin: 0% 0% 25% 0%;
-    font-size: 40px;
-}
-.logout-option{
     position: absolute;
-    display: flex;
-    margin: 100px 0px 0px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    top: 50px;
     font-size: 25px;
 }
+.logout-option{
+    display:contents;
+    font-size: 20px;
+}
 .option-no{
-    color: rgb(255, 255, 255);
-    margin: 0px 50px;
+    color: rgb(88, 88, 88);
+    margin: 80px 20px 0px 20px;
     background-color: rgb(14, 14, 14);
-    padding: 0px 80px;
+    padding: 0px 50px;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(114, 114, 114);
 }
 .option-no:hover{
     color: rgb(0, 0, 0);
@@ -174,12 +174,12 @@
     transition: 0.3s;
 }
 .option-yes{
-    color: rgb(255, 255, 255);
-    margin: 0px 50px;
-    background-color: rgb(14, 14, 14);
-    padding: 0px 80px;
+    color: rgb(36, 36, 36);
+    margin: 80px 20px 0px 20px;
+    background-color: rgb(204, 204, 204);
+    padding: 0px 50px;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px rgb(128, 19, 19);
 }
 .option-yes:hover{
     color: rgb(255, 255, 255);
@@ -188,10 +188,400 @@
 }
 .box-shadow{
     position: fixed;
-    z-index: 10000;
+    z-index: 9999;
     inset: 0px 0px;
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.close-box{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    border: black none;
+    inset: 0% 0% 75% 85%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 1829px) {
+    .cap{
+        font-size: 85px;
+        margin: 20% 0 70% 0;
+    }
+    .menu{
+        margin: 1% 0px;
+    }
+    .menu i{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .menu span{
+        font-size: 16px;
+        margin: 0px 15px 0px 0px;
+    }
+    .setting{
+        width: 120px;
+        margin-right: -25%;
+        font-size: 12px;
+    }
+    .setting:hover{
+        margin-right: -20%;
+    }
+    .setting p{
+        padding: 8px 0px 8px 60px;
+    }
+    .logout{
+        width: 140px;
+        margin: 20px 0 0 -25%;
+        font-size: 13px;
+    }
+    .logout:hover{
+        margin: 20px 0 0 -20%;
+    }
+    .logout p{
+        padding: 12px 0px 12px 50px;
+    }
+
+    .logout-box h1{
+        top: 30px;
+        font-size: 23px;
+    }
+    .logout-option{
+        font-size: 20px;
+    }
+    .option-no{
+        margin: 80px 20px 0px 20px;
+        padding: 0px 40px;
+    }
+    .option-yes{
+        margin: 80px 20px 0px 20px;;
+        padding: 0px 40px;
+    }
+}
+@media screen and (max-width: 1429px) {
+    .cap{
+        font-size: 70px;
+        margin: 20% 0 80% 0;
+    }
+    .menu{
+        margin: 1% 0px;
+    }
+    .menu i{
+        font-size: 16px;
+        margin: 20px;
+    }
+    .menu span{
+        font-size: 13px;
+        margin: 0px 12px 0px 0px;
+    }
+    .setting{
+        width: 110px;
+        margin-right: -30%;
+        font-size: 10px;
+    }
+    .setting:hover{
+        margin-right: -25%;
+    }
+    .setting p{
+        padding: 8px 0px 8px 60px;
+    }
+    .logout{
+        width: 125px;
+        margin: 20px 0 0 -30%;
+        font-size: 11px;
+    }
+    .logout:hover{
+        margin: 20px 0 0 -25%;
+    }
+    .logout p{
+        padding: 12px 0px 12px 50px;
+    }
+
+    .logout-box h1{
+        top: 30px;
+        font-size: 20px;
+    }
+    .logout-option{
+        font-size: 20px;
+    }
+    .option-no{
+        margin: 80px 15px 0px 15px;
+        padding: 0px 30px;
+    }
+    .option-yes{
+        margin: 80px 15px 0px 15px;;
+        padding: 0px 30px;
+    }
+}
+@media screen and (max-width: 1229px) {
+    .cap{
+        font-size: 55px;
+        margin: 40% 0 80% 0;
+    }
+    .menu{
+        margin: 1% 0px;
+    }
+    .menu i{
+        font-size: 30px;
+        margin: 20px 30%;
+    }
+    .menu span{
+        display: none;
+    }
+    .setting{
+        width: 110px;
+        margin-right: -30%;
+        font-size: 10px;
+    }
+    .setting:hover{
+        margin-right: -25%;
+    }
+    .setting p{
+        padding: 8px 0px 8px 60px;
+    }
+    .logout{
+        width: 125px;
+        margin: 20px 0 0 -30%;
+        font-size: 11px;
+    }
+    .logout:hover{
+        margin: 20px 0 0 -25%;
+    }
+    .logout p{
+        padding: 12px 0px 12px 50px;
+    }
+
+    .logout-box h1{
+        top: 50px;
+        font-size: 17px;
+    }
+    .logout-option{
+        font-size: 15px;
+    }
+    .option-no{
+        margin: 80px 15px 0px 15px;
+        padding: 0px 35px;
+    }
+    .option-yes{
+        margin: 80px 15px 0px 15px;;
+        padding: 0px 35px;
+    }
+    .close-box{
+        inset: 0% 0% 75% 80%;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .cap{
+        font-size: 45px;
+        margin: 60% 10px 120% 10px;
+    }
+    .menu{
+        margin: 1% 0px;
+    }
+    .menu i{
+        font-size: 20px;
+        margin: 20px 35%;
+    }
+    .menu span{
+        display: none;
+    }
+    .setting{
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        width: 100%;
+        margin: 100% 0 0 0;
+        font-size: 8px;
+        border-radius: 0%;
+    }
+    .setting:hover{
+        margin: 100% 0 0 0;
+    }
+    .setting p{
+        font-size: 10px;
+        padding: 8px 0px 8px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logout{
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        width: 100%;
+        margin: 30% 0 0 0;
+        font-size: 8px;
+        border-radius: 0%;
+    }
+    .logout:hover{
+        margin: 30% 0 0 0;
+    }
+    .logout p{
+        font-size: 10px;
+        padding: 8px 0px 8px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logout-box h1{
+        top: 50px;
+        font-size: 12px;
+    }
+    .logout-option{
+        font-size: 15px;
+    }
+    .option-no{
+        margin: 80px 5px 0px 5px;
+        padding: 0px 22px;
+    }
+    .option-yes{
+        margin: 80px 5px 0px 5px;;
+        padding: 0px 22px;
+    }
+    .close-box{
+        inset: 0% 0% 75% 75%;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 665px) {
+    .cap{
+        font-size: 25px;
+        margin: 80% 10px 120% 10px;
+    }
+    .menu{
+        margin: 1% 0px;
+    }
+    .menu i{
+        font-size: 18px;
+        margin: 20px 30%;
+    }
+    .menu span{
+        display: none;
+    }
+    .setting{
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        width: 100%;
+        margin: 100% 0 0 0;
+        font-size: 8px;
+        border-radius: 0%;
+    }
+    .setting:hover{
+        margin: 100% 0 0 0;
+    }
+    .setting p{
+        font-size: 5px;
+        padding: 8px 0px 8px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logout{
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        width: 100%;
+        margin: 30% 0 0 0;
+        font-size: 8px;
+        border-radius: 0%;
+    }
+    .logout:hover{
+        margin: 30% 0 0 0;
+    }
+    .logout p{
+        font-size: 5px;
+        padding: 8px 0px 8px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logout-box{
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
+    .logout-box h1{
+        top: 20px;
+        font-size: 9px;
+    }
+    .logout-option{
+        font-size: 10px;
+    }
+    .option-no{
+        margin: 40px 2px 0px 2px;
+        padding: 0px 10px;
+    }
+    .option-yes{
+        margin: 40px 2px 0px 2px;;
+        padding: 0px 10px;
+    }
+    .close-box{
+        inset: 0% 0% 75% 70%;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 497px) {
+    .sidebar{
+        overflow: auto;
+    }
+}
+@media screen and (max-height: 940px) {
+    .cap{
+        margin: 20% 0 50% 0;
+    }
+    .setting{
+        margin-top: 50%;
+        margin-right:-20%;
+    }
+    .setting:hover{
+        margin-top: 50%;
+        margin-right: -15%;
+    }
+    .logout{
+        margin-right: -20%;
+    }
+    .logout:hover{
+        margin-right: -15%;
+    }
+}
+@media screen and (max-height: 900px) {
+    .cap{
+        margin: 15% 0 30% 0;
+    }
+    .setting{
+        margin-top: 45%;
+        margin-right: -20%;
+    }
+    .setting:hover{
+        margin-top: 45%;
+        margin-right: -15%;
+    }
+    .logout{
+        margin-right: -20%;
+    }
+    .logout:hover{
+        margin-right: -15%;
+    }
+}
+@media screen and (max-height: 850px) {
+    .cap{
+        margin: 10% 0 10% 0;
+    }
+    .setting{
+        margin-right: -20%;
+    }
+    .setting:hover{
+        margin-right: -15%;
+    }
+    .logout{
+        margin-right: -20%;
+    }
+    .logout:hover{
+        margin-right: -15%;
+    }
+}
+@media screen and (max-height: 770px) {
+    .sidebar{
+        overflow: auto;
+    }
 }

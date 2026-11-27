@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Check - Statistics - ANW</title>
+    <link rel="icon" href="../pic/logo.png">
+    <link rel="stylesheet" href="../css/check.css">
     <link rel="stylesheet" href="../css/sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/check.css">
 </head>
 
 <body>
-    <div id="box-shadow" class="box-shadow">
-        <div id="logout-box" class="logout-box">
-            <h1>ต้องการออกจากระบบใช่มั้ย?</h1>
-            <div class="logout-option">
-                <div id="option-no" class="option-no">
-                    <p>ไม่</p>
-                </div>
-                <div id="option-yes" class="option-yes">
-                    <p>ใช่</p>
-                </div>
+    <div id="box-shadow" class="box-shadow"></div>
+    <div id="logout-box" class="logout-box">
+        <button id="close-box" class="close-box">X</button>
+        <h1>ต้องการออกจากระบบใช่มั้ย?</h1>
+        <div class="logout-option">
+            <div id="option-no" class="option-no">
+                <p>ไม่</p>
+            </div>
+            <div id="option-yes" class="option-yes">
+                <p>ใช่</p>
             </div>
         </div>
     </div>
@@ -69,6 +70,10 @@
             </div>
         </div>
     </div>
+
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/student.js"></script>
+    <script src="../js/home.js"></script>
 </body>
 
 </html>
